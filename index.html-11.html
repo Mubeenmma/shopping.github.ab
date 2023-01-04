@@ -1,0 +1,309 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: "spartan"  sans-serif;
+        }
+        .section-p1{
+            padding: 40px 80px;
+           
+        }
+        .pro-n{
+            color:rgba(224, 19, 36, 0.822);
+            margin-right: 400px;
+            font-size: 40px;
+            font-weight: 700;
+            display: inline;
+
+        }
+        
+        #header{
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            padding: 20px 80px;
+            background: #e3e6f3;
+            height: 80px;
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.06);
+            z-index: 999;
+            position: sticky;
+            top: 0;
+            left: 0;
+        }
+        #navbar{
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            z-index: 999;
+            position: sticky;
+            top: 0;
+            left: 0;
+        }
+        #navbar li{
+            list-style: none;
+            padding: 0 20px ;
+            position: relative;
+            text-decoration: none;
+            display: inline-block;
+        }
+        #navbar li{
+            text-decoration: none;
+            font-size: 16px;
+            font-weight: 600;
+            color: #1a1a1a;
+            transition: 0.3s ease;
+        }
+        #navbar li:hover,
+        #navbar li.active{
+            color: #088178;
+        }
+        #navbar li.active::after,
+            #navbar li:hover::after{
+            content: "";
+            width: 36%;
+            height: 2px;
+            background-color: #088178;
+            position: absolute;
+            bottom: -4px;
+            left: 20px;
+        }
+        #product{
+            text-align: center;
+        }
+        .pro-container {
+            margin: 0px;
+            margin-left: 0%;
+            margin-right: 0%;
+            display: inline-flex;
+            justify-content: space-between;
+            padding: 12px;
+
+        }
+        #product .pro{
+            width: 20%;
+            min-width: 230px;
+            padding: 10px 12px;
+            border: 5px solid #e0e4e1e8;
+            border-radius: 20px;
+            cursor: pointer;
+            box-shadow: 20px 20px 30px rgba(0, 0, 0, 0.02);
+            margin: 15px 0;
+        }
+        #product .pro img{
+            width: 200px;
+            border-radius: 20px;
+        }
+        #product .pro:hover{
+            box-shadow: 20px 20px 30px rgba(0, 0, 0, 0.06);
+            transition: 00.3s ease;
+        }
+        #product .pro .das{
+            text-align: start;
+            padding: 10px 0;
+        }
+        #product .pro .das span{
+            color: #606063;
+            font-size: 12px;
+        }
+        #product .pro .das h5{
+            padding-top: 7px;
+            color: #1a1a1a;
+            font-size: 14px;
+
+        }
+        #product .pro .das h4{
+            padding: 7px;
+            font-size: 15px;
+            font-weight: 700;
+            color: #088178;
+        }
+        h1{
+            color: rgba(224, 19, 36, 0.822);
+
+        }
+        p{
+            color: chocolate;
+        }
+        .previous{
+            font-size: 30px;
+            color: white;
+            text-decoration: none;
+            display: inline-block;
+            padding: 3px 8px;
+            margin-left: 600px;
+            background-color: #088178;
+            border-radius: 15px;
+            margin-bottom: 10px;
+
+        }
+        .previous:hover{
+            background-color: #ddd;
+            color: black;
+        }
+        @media (max-width: 415px){
+            .previous{
+                margin-left: 120px;
+                margin-bottom: 50px;
+            }
+            }
+    </style>
+</head>
+<body>
+    <section id="header">
+        <a href="#"><img src="logo.png" alt="" height="55px" width="55px"></a>
+        <span class="pro-n">E-kart shopping</span>
+        <div>
+            <ul id="navbar">
+                <a href="index.html">
+                    <li class="active">HOME</li>
+                    </a>
+                    <a href="index.html">
+                        <li>SHOP</li>
+                    </a>
+                    <a href="index.html">
+                        <li>ABOUT</li>
+                    </a>
+                    <a href="index.html">
+                        <li>CONTACT</li>
+                    </a>
+            </ul>
+        </div>
+    </section>
+
+    <section id="product" class="section-p1">
+        <h1>FATURE PRODUCTS</h1>
+        <p>summery collection new disign</p>
+        <div class="pro-container"> 
+        <div class="pro">
+            <img src="girl sote/images (45).jpeg">
+            <div class="das">
+                <span>adidas</span>
+                <h5>cartoon astroor T-sharts</h5>
+                <h4>$599</h4>
+            </div>
+        </div>
+        </div>
+        <div class="pro-container"> 
+            <div class="pro">
+                <img src="girl sote/images (46).jpeg" height="250px" >
+                <div class="das">
+                    <span>adidas</span>
+                    <h5>cartoon astroor T-sharts</h5>
+                    <h4>$599</h4>
+                </div>
+            </div>
+            </div>
+            <div class="pro-container"> 
+                <div class="pro">
+                    <img src="girl sote/images (47).jpeg" height="250px"  >
+                    <div class="das">
+                        <span>adidas</span>
+                        <h5>cartoon astroor T-sharts</h5>
+                        <h4>$599</h4>
+                    </div>
+                </div>
+                </div>
+                <div class="pro-container"> 
+                    <div class="pro">
+                        <img src="girl sote/images (48).jpeg" alt="" height="250px" >
+                        <div class="das">
+                            <span>adidas</span>
+                            <h5>cartoon astroor T-sharts</h5>
+                            <h4>$599</h4>
+                        </div>
+                    </div>
+                    </div>
+                    <div class="pro-container"> 
+                        <div class="pro">
+                            <img src="girl sote/images (49).jpeg" height="250px" >
+                            <div class="das">
+                                <span>adidas</span>
+                                <h5>cartoon astroor T-sharts</h5>
+                                <h4>$599</h4>
+                            </div>
+                        </div>
+                        </div>
+                        <div class="pro-container"> 
+                            <div class="pro">
+                                <img src="girl sote/images (50).jpeg"  height="250px" >
+                                <div class="das">
+                                    <span>adidas</span>
+                                    <h5>cartoon astroor T-sharts</h5>
+                                    <h4>$599</h4>
+                                </div>
+                            </div>
+                            </div>
+                            <div class="pro-container"> 
+                                <div class="pro">
+                                    <img src="girl sote/images (51).jpeg" height="250px" >
+                                    <div class="das">
+                                        <span>adidas</span>
+                                        <h5>cartoon astroor T-sharts</h5>
+                                        <h4>$599</h4>
+                                    </div>
+                                </div>
+                                </div>
+                                <div class="pro-container"> 
+                                    <div class="pro">
+                                        <img src="girl sote/images (52).jpeg" alt="" height="250px" >
+                                        <div class="das">
+                                            <span>adidas</span>
+                                            <h5>cartoon astroor T-sharts</h5>
+                                            <h4>$599</h4>
+                                        </div>
+                                    </div>
+                                    </div>
+                                    <div class="pro-container"> 
+                                        <div class="pro">
+                                            <img src="girl sote/images (53).jpeg" height="250px">
+                                            <div class="das">
+                                                <span>adidas</span>
+                                                <h5>cartoon astroor T-sharts</h5>
+                                                <h4>$599</h4>
+                                            </div>
+                                        </div>
+                                        </div>
+                                        <div class="pro-container"> 
+                                            <div class="pro">
+                                                <img src="girl sote/images (54).jpeg" alt=""  height="250px" >
+                                                <div class="das">
+                                                    <span>adidas</span>
+                                                    <h5>cartoon astroor T-sharts</h5>
+                                                    <h4>$599</h4>
+                                                </div>
+                                            </div>
+                                            </div>
+                                            <div class="pro-container"> 
+                                                <div class="pro">
+                                                    <img src="girl sote/images (45).jpeg" height="250px">
+                                                    <div class="das">
+                                                        <span>adidas</span>
+                                                        <h5>cartoon astroor T-sharts</h5>
+                                                        <h4>$599</h4>
+                                                    </div>
+                                                </div>
+                                                </div>
+                                                <div class="pro-container"> 
+                                                    <div class="pro">
+                                                        <img src="girl sote/images (46).jpeg" alt="" height="250px" >
+                                                        <div class="das">
+                                                            <span>adidas</span>
+                                                            <h5>cartoon astroor T-sharts</h5>
+                                                            <h4>$599</h4>
+                                                        </div>
+                                                    </div>
+                                                    </div>
+    </section>
+    <a href="index.html">
+        <input  class="previous" type="button" value=" &laquo;previous">
+    </a>
+</body>
+</html>
